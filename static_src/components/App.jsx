@@ -1,8 +1,15 @@
 import React from 'react';
-import '../style.css';
+import '../styles/style.css';
+import MessageField from './MessageField';
+import Message from './Message';
+
 
 export default class App extends React.Component {
+    componentDidMount() {
+        console.log("It doesn't works!!!");
+    }
+
     render() {
-        return (<div className={'div'}><h1 className={'h1'}>{this.props.param}</h1></div>)
+        return <MessageField />
     }
 }
