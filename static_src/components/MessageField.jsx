@@ -32,7 +32,7 @@ export default class MessageField extends React.Component {
         messageList.push(this.state.curId);
         const messages = this.state.messages;
         messages[this.state.curId] = { sender: 'bot', message: 'Не бей, Хозяин!' };
-        setTimeout(() => this.setState({ messageList, messages, input: '', curId: this.state.curId + 1 }), 1000);
+        this.setState({ messageList, messages, input: '', curId: this.state.curId + 1 });
     };
 
     handleInput = (e) => {
