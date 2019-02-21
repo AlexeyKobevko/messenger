@@ -36,8 +36,8 @@ module.exports = {
         loader: 'style-loader!css-loader',
       },
       {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded',
+        test: /\.(scss|sass)$/,
+        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded,modules: true',
       },
       {
         test: /\.(png|jpg|gif|svg|ttf|eot|woff|woff2)$/,
